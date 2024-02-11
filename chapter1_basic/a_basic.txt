@@ -1,0 +1,13 @@
+// NODE JS - OpenSource, Cross-platform I/O,  JS runtime
+
+>> NodeJs uses CommonJS module with module.exports and Vanilla JS uses ES6 module
+>> NodeJs runs it's code outside the browser but how? because NodeJs creates the environment to run JS outside the browser
+>> If you wanted to use JS outside the browser then NodeJs is the way to do it
+
+// IMPORT (ES Module) vs NODEJS (Common JS module)
+>> Basically Node Js supports CommonJs and Es Module but CommonJs is wildly used and recommended approach
+>> We can still use ES module way using WORKAROUND => (type:'module' --> in Package.json (or) save file as .mjs)
+
+// DON'T using NodeJs
+>> We can't use both module.exports and exports at the same time. Should use any 1 syntax only at a time
+>> If using Es Module then require will not be used - here we'll give actual fileName with extension while ES import

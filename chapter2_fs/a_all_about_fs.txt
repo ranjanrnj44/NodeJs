@@ -1,0 +1,29 @@
+// FS - it does all the file operations 
+
+>> NOTE: (first error next the data in CALLBACK)
+
+>> fs - fileSystem - to read files we should use 'utf-8' or toString(). If not we will get buffer data only
+>> We can do file operations in 2 ways (SYNC, ASYNC)
+>> SYNC : fs.readFileSync, fs.writeFileSync, fs.appendFileSync, fs.readFileSync, fs.unlinkFileSync
+>> ASYNC : fs.readFile, fs.writeFile, fs.appendFile, fs.readFile, fs.unlink
+>> UNCAUGHT ERROR : Always use process.exit() to handle uncaught exceptional error
+>> UTF-8 : Only for readFile we use the encoding and for other operations it is not required
+>> APPEND IN NEW LINE : To appendFile in new line we can use '\n\n'
+>> APPEND FILE - if you are appending to a new file then it wil create and add the append contents into it
+
+// ASYNC OPERATIONS to FS
+>> While performing a file operation it is recommended to use async await functionality. For This
+we will be using PROMISES ==> const fsPromise = require('fs').promises;
+
+// NOTE
+>> Check file f, g on how the file operations is handled using ASYNC AWAIT
+
+
+// STREAM OPERATIONS to FS
+>> Stream - In real world we will use a large amount of data for fs operations and not just 1 or 2 lines. To handle
+with heavy data we are using the streams (fs.createReadStream and fs.createWriteStream). Instead of taking as a whole 
+STREAM will take little by little data (i.e., Eg: Think of using water on pipe connection from water tank)
+
+// DIR OPERATIONS to FS
+>> mkDir - It is used to create a directory
+>> existsSync - checks whether the directory exists
