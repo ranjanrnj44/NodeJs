@@ -1,1 +1,3 @@
-rghnm
+This is some random message to write
+
+New append message to the existing message

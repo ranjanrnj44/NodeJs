@@ -12,6 +12,6 @@ console.log(path.join(__dirname, "videos/school/kerala")); // with current path,
 console.log(path.join(__dirname, "max", "karupu", "ranjan/home")); // added the other additional paths
 console.log(path.join(__dirname, '..')); // this will go 1 level up folder
 console.log(path.join(__dirname, '..', '..')); // this will go 2 level up folder
-console.log(path.join(__dirname, './a_basic.txt')); // gives the folder path and it's fileName
+console.log(path.join(__dirname, './a_basic.txt')); // gives the folder path and it's mentioned fileName
 
-console.log(path.join(__filename)); // this will give the complete path with the fileName extension
+console.log(path.join(__filename)); // this will give the complete path with the current fileName extension

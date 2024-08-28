@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const writeThisText = 'This content is replaced with message.txt since operation is WRITE!';
 
-const writeContent = fs.writeFileSync(path.join(__dirname, 'message.txt'), writeThisText);
+fs.writeFileSync(path.join(__dirname, 'message.txt'), writeThisText);
 console.log('content modified successfully!, check below status');
 console.log(fs.readFileSync(path.join(__dirname, 'message.txt'), 'utf-8'));
 

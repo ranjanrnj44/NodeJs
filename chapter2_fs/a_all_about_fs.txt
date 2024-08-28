@@ -4,10 +4,10 @@
 
 >> fs - fileSystem - to read files we should use 'utf-8' or toString(). If not we will get buffer data only
 >> We can do file operations in 2 ways (SYNC, ASYNC)
->> SYNC : fs.readFileSync, fs.writeFileSync, fs.appendFileSync, fs.readFileSync, fs.unlinkFileSync
->> ASYNC : fs.readFile, fs.writeFile, fs.appendFile, fs.readFile, fs.unlink
+>> SYNC : fs.readFileSync, fs.writeFileSync, fs.appendFileSync, fs.unlinkSync fs.renameSync
+>> ASYNC : fs.readFile, fs.writeFile, fs.appendFile, fs.unlink f.rename
 >> UNCAUGHT ERROR : Always use process.exit() to handle uncaught exceptional error
->> UTF-8 : Only for readFile we use the encoding and for other operations it is not required
+>> UTF-8 : Only for readFile we use the encoding and for other operations i't is not required
 >> APPEND IN NEW LINE : To appendFile in new line we can use '\n\n'
 >> APPEND FILE - if you are appending to a new file then it wil create and add the append contents into it
 

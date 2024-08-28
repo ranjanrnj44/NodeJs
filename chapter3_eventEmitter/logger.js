@@ -1,8 +1,8 @@
 const { format } = require('date-fns');
 const {v4: uuid} = require('uuid');
-// fs
+// fs - for sync operations
 const fs = require('fs');
-// fs Promise
+// fs Promise - for Async operations
 const fsPromises = require('fs').promises;
 const path = require('path');
 
